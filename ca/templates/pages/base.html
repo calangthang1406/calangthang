@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" type="text/css">
+    <title>{% block title %} Ca Lang Thang {% endblock %}</title>
+</head>
+
+<body>
+    <nav class="py-2 bg-white border-bottom">
+        <div class="container d-flex flex-wrap">
+           <ul class="nav me-auto">
+              <li class="nav-item"><a href="/home" class="nav-link link-dark px-2 active" aria-current="page">Home</a></li>
+              <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Features</a></li>
+              <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Pricing</a></li>
+              <li class="nav-item"><a href="#" class="nav-link link-dark px-2">FAQs</a></li>
+              <li class="nav-item"><a href="/about" class="nav-link link-dark px-2">About</a></li>
+           </ul>
+           <ul class="nav">
+              <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Login</a></li>
+              <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Sign up</a></li>
+           </ul>
+        </div>
+     </nav>
+  
+     <div class="page">
+  
+        <header class="page-header"
+              style="background-image:url('https://images.unsplash.com/photo-1517142099008-c2eb9227b575?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzMTY0MzU5Ng&ixlib=rb-1.2.1&q=50');">
+           <div class="container position-relative px-5 text-center text-white">
+              <div class="row gx-5 justify-content-center">
+                 <div class="col-lg-8">
+                    <h1 class="page-header-ui-title mb-3">Cá Lang Thang</h1>
+                    <p class="page-header-ui-text mb-0">I'm a little Fish in the big world!</p>
+                 </div>
+              </div>
+           </div>
+           <svg class="position-absolute bottom-0 start-50 translate-middle-x w-100"
+              style="height:3rem;"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 144.54 17.34"
+              preserveAspectRatio="none"
+              fill="#eef0f2">
+              <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+           </svg>
+        </header>
+{% block content %}
+
+{% endblock  %}
+
+</body>
+
+</html>
